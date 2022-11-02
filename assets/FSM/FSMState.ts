@@ -22,7 +22,7 @@ export default class FSMState  {
     OnEnter(){
 
     }
-    //状态更新中
+    //状态更新中 ，每一帧都执行
     OnUpdate(){
 
     }

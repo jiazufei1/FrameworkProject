@@ -10,7 +10,7 @@ export default class MessageCenter {
 
    //发送消息
    static SendMessage(msg:Message){
-     console.debug("MessageCenter SendMessage" + msg)
+     console.log("MessageCenter SendMessage" + msg)
         for(let manager of this.Managers){
             manager.ReceiveMessage(msg);
         }
@@ -20,7 +20,7 @@ export default class MessageCenter {
    static SendCustomMessage(type:number,command:number,content:any){
      
         let msg = new Message(type,command,content);
-        console.debug("MessageCenter SendCustomMessage" + msg)
+        console.log("MessageCenter SendCustomMessage" + msg)
         this.SendMessage(msg);
    }
 }

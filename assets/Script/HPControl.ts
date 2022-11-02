@@ -22,7 +22,7 @@ export default class HPControl extends ComponentBase {
         
         super.ReceiveMessage(message);
         if (message.Command == MessageType.UI_RefreshHp){
-            console.debug("HPControl ReceiveMessage" + message.Command)
+            console.log("HPControl ReceiveMessage" + message.Command)
             //得到参数
             let num = <number>message.Content;
             this.ChangeHP(num);
@@ -32,7 +32,7 @@ export default class HPControl extends ComponentBase {
 
     //改变血量
     ChangeHP(attack){
-        console.debug("HPControl ChangeHP" + attack)
+        console.log("HPControl ChangeHP" + attack)
         this.hp -= attack;
         //+ “” 转换成字符串
         this.node.children[1].getComponent(cc.Label).string = this.hp + "";

@@ -23,20 +23,20 @@ export default class ManagerBase extends ComponentBase {
 
     //设置当前管理类的消息类型
     SetMessageType(){
-        console.debug("ManagerBase SetMessageType" + MessageType.Type_UI)
+        console.log("ManagerBase SetMessageType" + MessageType.Type_UI)
         return MessageType.Type_UI;
     }
 
     //注册消息监听
     RegisterReceiver(cb:ComponentBase){
-        console.debug("ManagerBase RegisterReceiver" + cb)
+        console.log("ManagerBase RegisterReceiver" + cb)
         this.ReceiveList.push(cb);
     }
     
     //接收消息
     ReceiveMessage(message: Message): void {
         super.ReceiveMessage(message);
-        console.debug("ManagerBase ReceiveMessage" + message)
+        console.log("ManagerBase ReceiveMessage" + message)
         //判断消息类型
         if(message.Type != this.messageType){
             return;

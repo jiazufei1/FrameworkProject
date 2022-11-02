@@ -5,9 +5,11 @@
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/2.4/manual/en/scripting/life-cycle-callbacks.html
 
-import FSMManager from "../FSM/FSMManager";
-import DieState from "./DieState";
-import FlyState from "./FlyState";
+import FSMManager from "../../FSM/FSMManager";
+import DieState from "../testFSM/DieState";
+import FlyState from "../testFSM/FlyState";
+
+
 
 const {ccclass, property} = cc._decorator;
 

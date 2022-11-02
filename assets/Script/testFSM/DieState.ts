@@ -5,20 +5,20 @@
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/2.4/manual/en/scripting/life-cycle-callbacks.html
 
-import FSMState from "../FSM/FSMState";
+import FSMState from "../../FSM/FSMState";
+
+
 
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class FlyState extends FSMState {
+export default class DieState extends FSMState {
 
-
-    
     //进入状态
     OnEnter(): void {
         super.OnEnter()
-        console.log("FlyState OnEnter")
-        this.component.getComponent(cc.Label).string = "飞翔"
+        console.log("DieState OnEnter")
+        this.component.getComponent(cc.Label).string = "死亡"
     }
 
     //状态更新中

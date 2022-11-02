@@ -1,6 +1,7 @@
 
-import ComponentBase from "../Framework/ComponentBase";
-import Message, { MessageType } from "../Framework/Message";
+
+import ComponentBase from "../../Framework/ComponentBase";
+import Message, { MessageType } from "../../Framework/Message";
 import UIManager from "./UIManager";
 
 

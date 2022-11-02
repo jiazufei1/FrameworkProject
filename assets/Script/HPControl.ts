@@ -1,6 +1,9 @@
-import ComponentBase from "./ComponentBase";
-import Message, { MessageType } from "./Message";
+
+import ComponentBase from "../Framework/ComponentBase";
+import Message, { MessageType } from "../Framework/Message";
 import UIManager from "./UIManager";
+
+
 
 const {ccclass, property} = cc._decorator;
 

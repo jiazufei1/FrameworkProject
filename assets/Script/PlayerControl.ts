@@ -1,6 +1,6 @@
-import ComponentBase from "./ComponentBase";
-import { MessageType } from "./Message";
-import MessageCenter from "./MessageCenter";
+import ComponentBase from "../Framework/ComponentBase";
+import { MessageType } from "../Framework/Message";
+import MessageCenter from "../Framework/MessageCenter";
 
 const {ccclass, property} = cc._decorator;
 
